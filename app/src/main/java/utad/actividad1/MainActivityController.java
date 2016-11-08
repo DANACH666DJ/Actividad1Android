@@ -16,8 +16,7 @@ public class MainActivityController implements View.OnClickListener,View.OnFocus
     public void onClick(View view) {
         vista.btnEditar.setText("cancelar");
         vista.btnVolver.setText("guardar");
-        vista.txtHolaMundo.setText("HolaMundo");
-        vista.btnHolaMundo.setBackgroundColor(1111);
+
     }
 
     @Override
