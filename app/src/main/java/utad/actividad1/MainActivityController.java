@@ -8,15 +8,19 @@ import android.view.View;
 public class MainActivityController implements View.OnClickListener,View.OnFocusChangeListener{
 
     MainActivity vista;
+    boolean blEditable=false;
+
 
     MainActivityController(MainActivity vista){
         this.vista=vista;
     }
     @Override
     public void onClick(View view) {
-        vista.btnEditar.setText("cancelar");
-        vista.btnVolver.setText("guardar");
 
+        if(view.getId()== vista.btnEditar.getId()){
+            vista.btnEditar.setText("cancelar");
+            vista.btnVolver.setText("guardar");
+        }
     }
 
     @Override

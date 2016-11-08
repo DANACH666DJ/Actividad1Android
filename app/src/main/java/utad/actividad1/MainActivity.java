@@ -23,9 +23,10 @@ public class MainActivity extends AppCompatActivity {
         btnEditar=(Button)this.findViewById(R.id.button2);
 
 
-        btnHolaMundo=(Button)this.findViewById(R.id.button);
-        btnHolaMundo.setOnClickListener(mainActivityController);
-        //txtHolaMundo=(TextView)this.findViewById(R.id.textView);
+
+        btnVolver.setOnClickListener(mainActivityController);
+        btnEditar.setOnClickListener(mainActivityController);
+
 
 
 
