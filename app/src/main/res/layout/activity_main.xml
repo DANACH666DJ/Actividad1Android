@@ -48,7 +48,7 @@
 
                 <LinearLayout
                     android:orientation="horizontal"
-                    android:layout_width="wrap_content"
+                    android:layout_width="187dp"
                     android:layout_height="wrap_content">
 
                     <Button
@@ -78,7 +78,7 @@
                         />
 
                     <EditText
-                        android:layout_width="wrap_content"
+                        android:layout_width="193dp"
                         android:layout_height="wrap_content"
                         android:inputType="textPersonName"
                         android:ems="10"
@@ -91,7 +91,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="69dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -101,20 +101,19 @@
                 android:id="@+id/textView" />
 
             <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:ems="10"
-            android:id="@+id/editText2"
-                android:layout_marginBottom="58dp"
-                />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:layout_weight="1" />
 
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="62dp"
             android:weightSum="1">
 
             <TextView
@@ -130,13 +129,14 @@
                 android:inputType="phone"
                 android:ems="10"
                 android:id="@+id/editText3"
-                    android:layout_marginTop="43dp" />
+                android:layout_weight="1" />
+
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="75dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -148,21 +148,16 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
+                android:inputType="textEmailAddress"
                 android:ems="10"
-                android:id="@+id/editText4"
-                    android:layout_below="@+id/editText3"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignLeft="@+id/editText2"
-                    android:layout_alignStart="@+id/editText2"
-                    android:layout_marginTop="60dp" />
+                android:id="@+id/editText4" />
 
         </LinearLayout>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="39dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -170,6 +165,18 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Fecha incripcion"
                 android:id="@+id/textView5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="99dp">
+
+            <DatePicker
+                android:layout_width="wrap_content"
+                android:layout_height="142dp"
+                android:id="@+id/datePicker6" />
         </LinearLayout>
 
     </LinearLayout>
