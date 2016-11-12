@@ -26,7 +26,11 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -91,7 +95,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="69dp">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -113,7 +117,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="53dp"
             android:weightSum="1">
 
             <TextView
@@ -136,7 +140,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="75dp">
+            android:layout_height="58dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -157,7 +161,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="39dp">
+            android:layout_height="39dp"
+            android:layout_weight="0.28">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -171,13 +176,15 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="99dp">
+            android:layout_height="98dp">
 
             <DatePicker
                 android:layout_width="wrap_content"
-                android:layout_height="142dp"
+                android:layout_height="196dp"
                 android:id="@+id/datePicker6" />
+
         </LinearLayout>
 
     </LinearLayout>
+
 </RelativeLayout>
