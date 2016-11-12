@@ -22,15 +22,14 @@ public class MainActivityController implements View.OnClickListener,View.OnFocus
     public void onClick(View view) {
 
         if(view.getId()== vista.btnEditar.getId()){
-            vista.btnEditar.setText("cancelar");
-            vista.btnVolver.setText("guardar");
+            vista.btnEditar.setText("guardar");
+            vista.btnVolver.setText("cancelar");
             vista.btnEditar.setTextColor( -65536);
             vista.nombre.setEnabled(true);
             vista.email.setEnabled(true);
             vista.tlf.setEnabled(true);
             vista.direccion.setEnabled(true);
-        }
-        if(view.getId()== vista.btnVolver.getId()){
+
 
             String nombre = vista.nombre.getText().toString();
             String email = vista.email.getText().toString();
@@ -43,6 +42,7 @@ public class MainActivityController implements View.OnClickListener,View.OnFocus
             vista.campos.setText("Hola" +nombre + "con email : "
                     +email+" , telefono :" +tlf+ " y direccion : "+direccion);
         }
+
 
 
     }

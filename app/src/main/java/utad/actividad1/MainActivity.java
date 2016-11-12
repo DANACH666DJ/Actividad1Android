@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
         campos.setOnClickListener(mainActivityController);
 
         nombre.setOnClickListener(mainActivityController);
