@@ -20,7 +20,7 @@ public class SegundoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segundo);
-        segundoActivityController=new SegundoActivityController(this);
+
 
 
         btnPerfil=(Button)this.findViewById(R.id.btnPerfil);
@@ -31,7 +31,7 @@ public class SegundoActivity extends AppCompatActivity {
         Titulo=(EditText)this.findViewById(R.id.editTextTitulo);
         Texto=(EditText)this.findViewById(R.id.editTextTexto);
 
-
+        segundoActivityController=new SegundoActivityController(this);
 
         btnPerfil.setOnClickListener(segundoActivityController);
         btnAnterior.setOnClickListener(segundoActivityController);

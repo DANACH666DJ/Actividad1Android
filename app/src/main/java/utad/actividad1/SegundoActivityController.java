@@ -13,9 +13,11 @@ public class SegundoActivityController implements View.OnClickListener,View.OnFo
 
     String titulos[];
     String textos[];
+    int contador;
 
     public SegundoActivityController (SegundoActivity vistaSeg) {
         this.vistaSeg = vistaSeg;
+        contador=0;
         titulos=new String[]{
                 vistaSeg.getResources().getString(R.string.titulo1),
                 vistaSeg.getResources().getString(R.string.titulo2),
@@ -27,6 +29,9 @@ public class SegundoActivityController implements View.OnClickListener,View.OnFo
                 vistaSeg.getResources().getString(R.string.texto2),
                 vistaSeg.getResources().getString(R.string.texto3)
         };
+
+        vistaSeg.Titulo.setText(titulos[contador]);
+        vistaSeg.Texto.setText(textos[contador]);
     }
 
 
@@ -36,15 +41,31 @@ public class SegundoActivityController implements View.OnClickListener,View.OnFo
             Intent intent = new Intent(vistaSeg, MainActivity.class);
             vistaSeg.startActivity(intent);
             vistaSeg.finish();
-        }else if(view.getId() == vistaSeg.btnSiguiente.getId()){
+        }else if(view.getId() == vistaSeg.btnSiguiente.getId()) {
+            contador++;
+            if(titulos.length==contador ){
+                contador=0;
+            }
+            vistaSeg.Titulo.setText(titulos[contador]);
+            vistaSeg.Texto.setText(textos[contador]);
 
+        }else if(view.getId() == vistaSeg.btnAnterior.getId()) {
+            contador--;
+            if(contador==-1 ){
+                contador=titulos.length-1;
+            }
 
-        }
-
+            vistaSeg.Titulo.setText(titulos[contador]);
+            vistaSeg.Texto.setText(textos[contador]);
 
     }
 
 
+
+
+
+
+    }
 
 
 

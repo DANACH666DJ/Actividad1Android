@@ -53,7 +53,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:inputType="textPersonName"
-                    android:text="Capitulo Primero"
                     android:ems="10"
                     android:id="@+id/editTextTitulo"
                     android:layout_weight="1" />
@@ -93,8 +92,7 @@
                             android:layout_height="284dp"
                             android:inputType="textMultiLine"
                             android:ems="10"
-                            android:id="@+id/editTextTexto"
-                            android:text="En un lugar de la Mancha2, de cuyo nombre no quiero acordarme3, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor4. Una olla de algo más vaca que carnero, salpicón las más noches5, duelos y quebrantos los sábados6, lantejas los viernes7, algún palomino de añadidura los domingos8, consumían las tres partes de su hacienda9. El resto della concluían sayo de velarte10, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo11, y los días de entresemana se honraba con su vellorí de lo más fino." />
+                            android:id="@+id/editTextTexto" />
                     </LinearLayout>
                 </ScrollView>
             </LinearLayout>
