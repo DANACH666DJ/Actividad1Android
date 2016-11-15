@@ -15,9 +15,12 @@ public class MainActivity extends AppCompatActivity {
     public EditText tlf;
     public EditText direccion;
 
-    public TextView campos;
+
 
     MainActivityController mainActivityController;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mainActivityController=new MainActivityController(this);
 
-        campos=(TextView) this.findViewById(R.id.textView10);
+
 
         btnVolver=(Button)this.findViewById(R.id.button);
         btnEditar=(Button)this.findViewById(R.id.button2);
@@ -36,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
         tlf=(EditText)this.findViewById(R.id.editText3);
         direccion=(EditText)this.findViewById(R.id.editText4);
 
+        nombre.setText(DataHolder.sNombre);
+        email.setText(DataHolder.sEmail);
+        tlf.setText(DataHolder.sTlf);
+        direccion.setText(DataHolder.sDireccion);
 
 
         nombre.setEnabled(false);
@@ -47,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        campos.setOnClickListener(mainActivityController);
+
 
         nombre.setOnClickListener(mainActivityController);
         email.setOnClickListener(mainActivityController);

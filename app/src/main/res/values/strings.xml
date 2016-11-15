@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Actividad1</string>
+    <string name="titulo1">Capitulo1</string>
+    <string name="titulo2">Capitulo2</string>
+    <string name="titulo3">Capitulo3</string>
+
+    <string name="texto1">En un lugar de la mancha</string>
+    <string name="texto2">Capitulo2</string>
+    <string name="texto3">Capitulo3</string>
 </resources>
